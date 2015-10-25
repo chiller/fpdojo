@@ -1,4 +1,4 @@
-# requirements
+# installing tools
 
 - install the ghc haskell compiler : `brew install ghc` or  `apt-get install ghc`
 - make sure you are able to compile:
@@ -7,6 +7,9 @@
         factorial x = product [1..x]
         main = putStrLn . show $ factorial 5
     - compile it `ghc example.hs` , run it `./example`
+
+- to install clojure
+    - http://leiningen.org/#install
 
 # introduction
 
