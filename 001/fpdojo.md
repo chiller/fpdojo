@@ -1,53 +1,63 @@
 # what is fp
 
-    first-class higher-order functions
+- first-class functions
+- higher-order functions
     filter, map, reduce
-    pure functions - no mutation, no assignment - easier to understand code without looking at it
-    recursion
+- pure functions - no mutation, no assignment 
+    easier to understand code without looking at the function body
+- recursion instead of loops
+- encourages writing code using expressions rather than statements 
+- large emphasis on [function composition](https://en.wikipedia.org/wiki/Function_composition)
 
-
-    encourages writing code using expressions rather than statements, composition
+Example of imperative programming:
 
         int total = 0;
         for(int i = 1; i<=10; i++){
             total = total + 1;
         }
-    statements, mutable state
+
+- statements, mutable state
+
+Same example in a functional style:
 
     sum [1..10]
 
-    no statements, expressions
-
-    why is it suddenly so popular?
-
+- no statements, expressions
+   
 # functional programming in javascript
-    es6 tail call recursion
-    map/reduce
-    promises - js callback christmas tree of doom
-
+    
+- es6 tail call recursion
+- map/reduce
+- promises - js callback christmas tree of doom
 
 
 # why is it useful
 
-use spotify frontend guy's video example
-    easier to reason about code
-    hof
-uncle bob video
+- easier to reason about code
+- because you avoid mutable/global state - for multithreaded applications this reduces the need 
+for locking/mutual exclusions/worrying about race conditions. Since processors nowadays improve in
+the number of cores vs single core processing speed Uncle Bob predicts a rise in parallel applications.
 
+[Source](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
-# haskell concepts
+- producing code is hard, producing large amounts of code is very hard. Naming things and expressing your ideas in code is still hard - the kind of higher level abstraction enabled by the functional style can be a powerful addition to your vocabulary. You may never develop in a pure functional environment, but knowing what tools to pick in what situation is a useful thing. See [when all you have is a hammer](https://en.wikipedia.org/wiki/Law_of_the_instrument)
 
-compiled language, rich type system, type inference
-ghci
-lazy evaluation
-list comprehension
+# haskell concepts in random order
 
-    [(i,j) | i <- [1,2], j <- [1..4], i < j]
+- compiled language
+- rich type system
+- type inference
+- ghci, interactive shell
+- lazy evaluation
+- list comprehension
 
-head - O1
-tail - O1
-nth element - On
+    `[(i,j) | i <- [1,2], j <- [1..4], i < j]`
 
+- (linked) list as primary data structure
+
+    - head - `O(1)`
+    - tail - `O(1)`
+    - nth element - `O(n)` see [Big O cheatsheet](http://bigocheatsheet.com/)
 
 # exercises
 
