@@ -5,6 +5,7 @@
     filter, map, reduce
 - pure functions - no mutation, no assignment 
     easier to understand code without looking at the function body
+    referential transparency
 - recursion instead of loops
 - encourages writing code using expressions rather than statements 
 - large emphasis on [function composition](https://en.wikipedia.org/wiki/Function_composition)
