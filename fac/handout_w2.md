@@ -42,16 +42,20 @@ Haskell
 Higher Order Functions
 ----------------------
 
-* anonymous functions aka lambda functions
+### anonymous functions 
+    aka lambda functions
     `function(x){return 2*x}` in js is `\x -> 2*x` in Haskell
     Note the \ that is a simplified λ
     So `myfun = \x -> 2*x` is the same as `myfun x = 2 * x`
-* `filter cond list` returns a new list with the elements that pass the condition
+### filter
+    `filter cond list` returns a new list with the elements that pass the condition
 
     `filter (\x -> x < 5) [1,2,3,4,5,6,7,8]` is `[1,2,3,4]`
-* `map func list` returns a new list that contains func(i) for every i in list
+### map
+    `map func list` returns a new list that contains func(i) for every i in list
     `map (\x -> x * 2) [1,2,3]` is `[2,4,6]`
-* `foldl func acc list` (kind of like reduce in js)
+### fold
+    `foldl func acc list` (kind of like reduce in js)
     updates acc like so `acc = func(acc, i)` for every i in list
 
     `sum (x:xs) = foldl (\x y -> x+y) x xs`
