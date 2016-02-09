@@ -7,7 +7,7 @@ Complete the definitions to implement mysum, that adds all the items in a list
 mysum [] = 0
 mysum xs = (head xs) + ...
 ```
-a) `xs`
+a) `mysum (tail xs)`
 
 b) `tail xs`
 
