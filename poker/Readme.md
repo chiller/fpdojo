@@ -1,0 +1,3 @@
+
+
+runhaskell pokerkatatest.hs
